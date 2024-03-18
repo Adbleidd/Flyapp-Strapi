@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "travels",
+  "info": {
+    "singularName": "travel",
+    "pluralName": "travels",
+    "displayName": "Travels",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Origin": {
+      "type": "string",
+      "required": true
+    },
+    "Destination": {
+      "type": "string",
+      "required": true
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    },
+    "Airline": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::airline.airline"
+    },
+    "Country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    }
+  }
+}

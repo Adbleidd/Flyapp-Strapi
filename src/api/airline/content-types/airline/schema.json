@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "airlines",
+  "info": {
+    "singularName": "airline",
+    "pluralName": "airlines",
+    "displayName": "Airlines"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
